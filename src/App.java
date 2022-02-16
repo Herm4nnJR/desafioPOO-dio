@@ -1,4 +1,7 @@
+import java.time.LocalDate;
+
 import dominio.Curso;
+import dominio.Monitoria;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -12,11 +15,14 @@ public class App {
         curso2.setDescricao("Curso Introdutorio para javascript");
         curso2.setCargaHoraria(6);
 
+        Monitoria mentoria1 = new Monitoria(); 
+        mentoria1.setTitulo("Curso Javascript");
+        mentoria1.setDescricao("Curso Introdutorio para javascript");
+        mentoria1.setData(LocalDate.now());
+
         System.out.println(curso1);
         System.out.println(curso2);
-    
-    
-    
+        System.out.println(mentoria1);
     
     }
 }
